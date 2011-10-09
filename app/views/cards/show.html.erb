@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @card.name %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @card.message %>
+</p>
+
+<%= image_tag @card.photo.url(:small) %>
+
+<a name="fb_share"></a> 
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript">
+</script>
+
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
