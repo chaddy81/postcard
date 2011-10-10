@@ -1,5 +1,6 @@
 Postcard::Application.routes.draw do
   resources :cards
+  resources :borders
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
