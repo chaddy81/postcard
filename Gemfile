@@ -20,7 +20,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'mongoid'
 gem 'bson_ext'
-gem "mongoid-paperclip", :require => "mongoid_paperclip"
+gem "paperclip",         :require => "paperclip"
 gem "aws-s3",            :require => "aws/s3"
 gem "heroku"
 
